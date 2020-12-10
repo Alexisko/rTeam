@@ -6,6 +6,8 @@
 #' @export
 #'
 #' @examples
+#' path <- "C:/Users/fr103343/Documents/R/Projects/annex 4/conversion/2020-12-10/conversion"
+#' annex_K(path)
 annex_K <- function(path) {
 
   list_files <- function(path) {
@@ -72,7 +74,6 @@ annex_K <- function(path) {
       purrr::keep(stringr::str_detect(., "imp")) %>%
       file.copy(paste0(path, "/annexe K"))
 
-    flows <- readr::read_delim("flows.txt", delim = ";", col_names = FALSE)
 
     imp_exp_flows <- readr::read_delim(
       paste0(path, "/imp_exp_flows.txt"),

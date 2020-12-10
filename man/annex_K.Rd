@@ -15,3 +15,7 @@ annex_K(path)
 \description{
 Add annex K lines at the end of modules and imp_exp flows
 }
+\examples{
+path <- "C:/Users/fr103343/Documents/R/Projects/annex 4/conversion/2020-12-10/conversion"
+annex_K(path)
+}
