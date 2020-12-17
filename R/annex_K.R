@@ -93,6 +93,10 @@ annex_K <- function(path) {
     )
   }
 
+  path <- ifelse(stringr::str_ends(path, "/"),
+                 stringr::str_sub(path, end = -2L),
+                 path)
+
   dir.create(paste0(path, "/annexe K/"))
 
   file_list <- list_files(path)
