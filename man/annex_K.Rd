@@ -4,7 +4,7 @@
 \alias{annex_K}
 \title{Add annex K lines at the end of modules and imp_exp flows}
 \usage{
-annex_K(path = choose.dir())
+annex_K(path = utils::choose.dir())
 }
 \arguments{
 \item{path}{Path where your files are located. **Default to choose.dir()** which opens a Windows file fialog to choose a folder.}
